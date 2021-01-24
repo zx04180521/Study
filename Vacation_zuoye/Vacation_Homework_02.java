@@ -19,8 +19,8 @@ public class Vacation_Homework_02 {
 
         //给定一个整数数组，判断是否存在重复元素。如果任何值在数组中出现至少两次，函数返回 true。如果数组中
         //每个元素都不相同，则返回 false。
-        int[] nums = {1, 2, 3, 4, 5, 5};
-        System.out.println(containsDuplicate(nums));
+//        int[] nums = {1, 2, 3, 4, 5, 5};
+//        System.out.println(containsDuplicate(nums));
 
 
         //你的朋友正在使用键盘输入他的名字 name。偶尔，在键入字符 c 时，按键可能会被长按，而字符可能被输入1 次或多次。你将会检查
