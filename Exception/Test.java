@@ -9,6 +9,24 @@ public class Test {
 //        fun3();//捕获多个异常
 //        fun4();//捕获所有异常
 //        fun5();//加上finally善后工作
+//        divide();//主动抛出异常
+
+    }
+
+    private static void divide() {
+        try{
+            fun6(0,10);
+        }catch (ArithmeticException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    private static int fun6(int x,int y) {
+        if(x==0){
+            throw new ArithmeticException("抛出除0异常");
+        }
+        return y/x;
     }
 
     private static void fun5() {

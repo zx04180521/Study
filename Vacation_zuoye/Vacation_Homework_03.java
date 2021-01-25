@@ -13,14 +13,18 @@ public class Vacation_Homework_03 {
 //        int[] result = sortedSquares(A);
 //        System.out.println(Arrays.toString(result));
 
+
         //给定一个字符串 S ，返回 “反转后的” 字符串，其中不是字母的字符都保留在原地，而所有字母的位置发生反转
 //        String str = "7_28]";
 //        System.out.println(reverseOnlyLetters(str));
 
+
         //给定一个非负整数数组 A ，返回一个数组，在该数组中， A 的所有偶数元素之后跟着所有奇数元素(注意：不
         //是排序，只是奇数在前偶数在后哈！)
-        int[] A={1,2,3,4,5,6};
-        System.out.println(Arrays.toString(sortArrayByParity(A)));
+//        int[] A={1,2,3,4,5,6};
+//        System.out.println(Arrays.toString(sortArrayByParity(A)));
+
+
 
 //        给定一个整数类型的数组 nums ，请编写一个能够返回数组“中心索引”的方法。我们是这样定义数组中心索引
 //        的：数组中心索引的左侧所有元素相加的和等于右侧所有元素相加的和。如果数组不存在中心索引，那么我们应该
