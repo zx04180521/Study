@@ -1,8 +1,11 @@
 package BookSystem;
 
+import java.util.Arrays;
+
 public class BookList {
     private Book[] books=new Book[100];
     private int size;
+
 
     public BookList() {
         books[0]=new Book("三国演义","罗贯中",100,"历史名著");
@@ -15,6 +18,7 @@ public class BookList {
         return books[index];
     }
     public void setBook(int index,Book book){
+
         books[index]=book;
     }
 
@@ -23,6 +27,7 @@ public class BookList {
     }
 
     public int getSize() {
+
         return size;
     }
 }
