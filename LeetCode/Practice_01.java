@@ -2,20 +2,21 @@ package LeetCode;
 
 public class Practice_01 {
     public static void main(String[] args) {
-        //在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，
-        // 但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
-        int[] nums = {1, 2, 3, 4, 2};
-         System.out.println(findRepeatNumber(nums));
+        System.out.println(numWays(6));
     }
-    public static int findRepeatNumber(int[] nums) {
-        int[] arr = new int[nums.length];
-        int i = 0;
-        for (i = 0; i < nums.length; i++) {
-            arr[nums[i]]++;
-            if (arr[nums[i]] > 1) {
-                return nums[i];
+    public static int numWays(int n) {
+        int a = 1;
+        int b = 1;
+        int c = 0;
+
+        if (n < 2) return 1;
+        else {
+            for (int j = 0; j < n - 1; j++) {
+                c = a + b;
+                a = b;
+                b = c % 1000000007;
             }
         }
-        return nums[i];
+        return b;
     }
 }
