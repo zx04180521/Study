@@ -4,29 +4,23 @@ import java.util.Arrays;
 
 public class Practice_02 {
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,5};
-        System.out.println(thirdMax(nums));
+        char[] a = {'a', 'a', 'e', 'e', 'c'};
+        System.out.println(compress(a));
     }
-    public static int thirdMax(int[] nums) {
-        long first = Long.MIN_VALUE;
-        long second = Long.MIN_VALUE;
-        long third = Long.MIN_VALUE;
-        for (int i : nums) {
-            if (third >= i || second == i || first == i) {
-                continue;
-            } else if (i > first) {
-                third = second;
-                second = first;
-                first = i;
-            } else if (i > second) {
-                third = second;
-                second = i;
-            } else {
-                third = i;
+    public static int compress(char[] chars) {
+        int current = 0, write = 0;
+        for (int read = 0; read < chars.length; read++) {
+            if (read + 1 == chars.length || chars[read + 1] != chars[read]) {
+                chars[write++] = chars[current];
+                if (read > current) {
+                    for (char c: ("" + (read - current + 1)).toCharArray()) {
+                        chars[write++] = c;
+                    }
+                }
+                current = read + 1;
             }
         }
-        return third == Long.MIN_VALUE ? (int) first : (int) third;
+        return write;
     }
-
 
 }
