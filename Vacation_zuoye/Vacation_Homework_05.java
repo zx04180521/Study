@@ -1,12 +1,13 @@
 package Vacation_zuoye;
 
+import java.awt.image.WritableRaster;
 import java.util.Arrays;
 
 public class Vacation_Homework_05 {
     public static void main(String[] args) {
         //给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
-        String s = "A man, a plan, a canal: Panama";
-        System.out.println(isPalindrome(s));
+//        String s = "A man, a plan, a canal: Panama";
+//        System.out.println(isPalindrome(s));
 
 
         //    给定一组字符，使用原地算法将其压缩。压缩后的长度必须始终小于或等于原数组长度。数组的每个元素应该
@@ -14,7 +15,43 @@ public class Vacation_Homework_05 {
 //        char[] a = {'a', 'a', 'e', 'e', 'c'};
 //        System.out.println(compress(a));
 
+
+
+        //给定一个整数数组，你需要寻找一个连续的子数组，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序.
+        int[] nums={1,2,3,4};
+        System.out.println(findUnsortedSubarray(nums));
+
     }
+    //给定一个整数数组，你需要寻找一个连续的子数组，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序
+    public static int  findUnsortedSubarray(int[] nums){
+        if(nums.length==0){return 0;}
+        int left=0,right=0;
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]>max){
+                max=nums[i];
+            }
+            else if(nums[i]<max) {
+                right=i;
+            }
+        }
+        for(int i=nums.length-1;i>=0;i--){
+          if(nums[i]<min){
+              min=nums[i];
+          }else if(nums[i]>min){
+              left=i;
+          }
+        }
+       if(left==right){
+           return 0;
+       }
+        return right-left+1;
+    }
+
+
+
+
 
     //给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
     public static boolean isPalindrome(String s) {
