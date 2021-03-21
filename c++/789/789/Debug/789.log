@@ -1,0 +1,13 @@
+﻿Build started 2019/10/19 22:05:44.
+     1>Project "E:\C++程序\789\789\789.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\789.unsuccessfulbuild".
+       ClCompile:
+         D:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt 789.cpp
+         789.cpp
+     1>e:\c++程序\789\789\789.cpp(33): error C2660: 'Date::setDate' : function does not take 0 arguments
+     1>Done Building Project "E:\C++程序\789\789\789.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.31
