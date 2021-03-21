@@ -1,0 +1,18 @@
+﻿  atm.3.cpp
+E:\C++程序\atm.3\atm.3.cpp(7,18): error C2061: 语法错误: 标识符“Consumer”
+E:\C++程序\atm.3\atm.3.cpp(17,12): error C2143: 语法错误: 缺少“;”(在“&”的前面)
+E:\C++程序\atm.3\atm.3.cpp(17,12): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\C++程序\atm.3\atm.3.cpp(17,14): error C2238: 意外的标记位于“;”之前
+E:\C++程序\atm.3\atm.3.cpp(38,23): error C2511: “Atm::Atm(Consumer &)”:“Atm”中没有找到重载的成员函数
+E:\C++程序\atm.3\atm.3.cpp(4): message : 参见“Atm”的声明
+E:\C++程序\atm.3\atm.3.cpp(39,1): error C2550: “Atm::{ctor}”: 构造函数初始值设定项列表只能在构造函数定义中使用
+E:\C++程序\atm.3\atm.3.cpp(40,27): error C2597: 对非静态成员“Atm::password”的非法引用
+E:\C++程序\atm.3\atm.3.cpp(41,17): error C2597: 对非静态成员“Atm::n”的非法引用
+E:\C++程序\atm.3\atm.3.cpp(42,15): error C2597: 对非静态成员“Atm::name”的非法引用
+E:\C++程序\atm.3\atm.3.cpp(43,19): error C2597: 对非静态成员“Atm::num”的非法引用
+E:\C++程序\atm.3\atm.3.cpp(49,1): error C2084: 函数“Consumer::Consumer(std::string,int,std::string,int)”已有主体
+E:\C++程序\atm.3\atm.3.cpp(32): message : 参见“{ctor}”的前一个定义
+E:\C++程序\atm.3\atm.3.cpp(65,17): error C2082: 形参“password”的重定义
+E:\C++程序\atm.3\atm.3.cpp(138,21): error C3867: “Atm::information”: 非标准语法；请使用 "&" 来创建指向成员的指针
+E:\C++程序\atm.3\atm.3.cpp(139,18): error C3867: “Atm::withdraw”: 非标准语法；请使用 "&" 来创建指向成员的指针
+E:\C++程序\atm.3\atm.3.cpp(140,25): error C3867: “Atm::change_password”: 非标准语法；请使用 "&" 来创建指向成员的指针
