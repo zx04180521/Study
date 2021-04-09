@@ -1,3 +1,0 @@
-﻿  ConsoleApplication1.c
-E:\c\zy\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.c(7,16): warning C4013: “max”未定义；假设外部返回 int
-  ConsoleApplication1.vcxproj -> E:\c\zy\ConsoleApplication1\Debug\ConsoleApplication1.exe
