@@ -1,0 +1,13 @@
+﻿  ATM.cpp
+E:\C++程序\ATM\ATM.cpp(53,1): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+E:\C++程序\ATM\ATM.cpp(54,1): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+E:\C++程序\ATM\ATM.cpp(56,1): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+E:\C++程序\ATM\ATM.cpp(82,1): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : 参见“strcpy”的声明
+E:\C++程序\ATM\ATM.cpp(298,50): error C2664: “consumer::consumer(consumer &&)”: 无法将参数 1 从“const char [3]”转换为“char []”
+E:\C++程序\ATM\ATM.cpp(298,14): message : 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
+E:\C++程序\ATM\ATM.cpp(51,11): message : 参见“consumer::consumer”的声明
+E:\C++程序\ATM\ATM.cpp(297): fatal error C1075: “{”: 未找到匹配令牌
