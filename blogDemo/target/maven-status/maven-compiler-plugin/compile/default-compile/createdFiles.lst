@@ -1,0 +1,10 @@
+model\UserDao.class
+api\deleteArticleServlet.class
+api\RegisterServlet.class
+model\Article.class
+api\ArticleServlet.class
+view\HtmlGenerator.class
+model\ArticleDao.class
+api\LoginServlet.class
+model\DBUtil.class
+model\User.class

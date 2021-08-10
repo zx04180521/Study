@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="login" method="post">
+        用户名：<input type="text" name="username">
+        <br><br>
+        密码：<input type="password" name="password">
+        <br><br>
+        <input type="submit" value="登录">
+    </form>
+    <br><br>
+    <!-- 绑定按钮的点击事件，在用户点击时，调用绑定的js函数 -->
+    <!-- js方式跳转 -->
+    <button onclick="goto()">点我跳转</button>
+    <br><br>
+    <!-- 服务端的方式跳转 -->
+    <button onclick="goto2(1)">服务端转发</button>
+    <button onclick="goto2(2)">服务端重定向</button>
+</body>
+<script>
+    function goto() {//跳转页面
+        window.location.href = "home.html";
+    }
+    function goto2(type) {//跳转页面
+        window.location.href = "goto?type="+type;
+    }
+</script>
+</html>
